@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse Computation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Traverse Computation (Multiple Points)</h1>
+        <form id="traverseForm">
+            <label for="startX">First X Coordinate:</label>
+            <input type="number" id="startX" placeholder="e.g. 1000" required><br>
+
+            <label for="startY">First Y Coordinate:</label>
+            <input type="number" id="startY" placeholder="e.g. 500" required><br>
+
+            <label for="endX">Second X Coordinate:</label>
+            <input type="number" id="endX" placeholder="e.g. 1200" required><br>
+
+            <label for="endY">Second Y Coordinate:</label>
+            <input type="number" id="endY" placeholder="e.g. 700" required><br>
+
+            <h2>Enter Points (Bearing and Distance)</h2>
+            <div id="pointInputs">
+                <div class="point">
+                    <label>Bearing (degrees):</label>
+                    <input type="number" class="bearing" placeholder="e.g. 45" required>
+
+                    <label>Distance (meters):</label>
+                    <input type="number" class="distance" placeholder="e.g. 200" required><br>
+                </div>
+            </div>
+
+            <button type="button" id="addPointBtn">Add Point</button>
+            <button type="button" id="computeBtn">Compute Coordinates</button>
+        </form>
+
+        <div id="output">
+            <h3>Computed Coordinates</h3>
+            <ul id="resultList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
